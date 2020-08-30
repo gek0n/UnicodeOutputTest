@@ -1,0 +1,1 @@
+An example of output unicode strings to console
