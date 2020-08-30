@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.18)
 
-project(UnicodeOutputTest VERSION 0.2)
+project(UnicodeOutputTest VERSION 0.3)
 
 option(IS_WIDE "Use wide chars" OFF)
 
