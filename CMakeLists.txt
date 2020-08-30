@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.18)
 
-project(UnicodeOutputTest VERSION 0.2)
+project(UnicodeOutputTest VERSION 0.3)
 
 option(IS_WIDE "Use wide chars" OFF)
 
@@ -13,4 +13,3 @@ if(IS_WIDE)
 else()
   target_compile_definitions(TestEncoding PRIVATE -DWIDE=false)
 endif()
-target_link_options(TestEncoding PRIVATE -mconsole)
