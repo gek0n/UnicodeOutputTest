@@ -1,10 +1,10 @@
 @echo off
-REM set "VS2019_HOME=C:\Program Files (x86)\Microsoft Visual Studio\2019\"
-REM set "MINGW32_HOME=C:\MinGW\bin"
-REM set "MINGW64_HOME=C:\MinGW64\bin"
-REM set "CLANG_HOME=C:/LLVM/bin" REM Notice that CMAKE loves forward slashes
-REM set "MAKE_HOME=C:\MinGW\bin"
-REM set "NMAKE_HOME=C:\Program Files (x86)\Microsoft Visual Studio\2019\"
+set "VS2019_HOME=C:\Program Files (x86)\Microsoft Visual Studio\2019\"
+set "MINGW32_HOME=C:\MinGW\bin"
+set "MINGW64_HOME=C:\MinGW64\bin"
+set "CLANG_HOME=C:/LLVM/bin" REM Notice that CMAKE loves forward slashes
+set "MAKE_HOME=C:\MinGW\bin"
+set "NMAKE_HOME=C:\Program Files (x86)\Microsoft Visual Studio\2019\"
 if "%1" == "" (set BUILD_DIR=build) else (set BUILD_DIR=build_%1)
 if "%1" == "mingw32" (
   if "%MINGW32_HOME%" == "" (
